@@ -119,3 +119,54 @@ import time
 #     time.sleep(3)
 # else:
 #     print(cadena.replace(car1, car2))
+
+# #PY0001
+# menu = ["sopa", "pisto", "tarta"]
+# for i in range(0,len(menu)):
+#     print(f"{i+1}. {menu[i].capitalize()}")
+
+# #PY0002
+# precios = [2, 5.95, 3.40, 8.4]
+# preciosDescuento = []
+# for i in range(0, len(precios)):
+#     if i % 2 == 0:
+#         preciosDescuento.append(precios[i] * 0.9)
+#     else:
+#         preciosDescuento.append(precios[i] * 0.8)
+#     print(f"indice_lista = {i}, precio_antes = {precios[i]:.2f}, precio_depués = {preciosDescuento[i]:.2f}")
+
+# #PY0015
+# matriz = [[1, 1, 1, 1], [2, 2, 2, 2], [3, 3, 3, 3], [4, 4, 4, 4]]
+# for fila in matriz:
+#     fila[3] = sum(fila[:3:])
+# print(f"Matriz = {matriz}")
+
+# #PY0003
+# asistentes = []
+# while True:
+#     asistente = input("Añade un asistente a la lista: ").capitalize()
+#     asistentes.append(asistente)
+#     if asistente == "fin".capitalize():
+#         asistentes.remove("fin".capitalize())
+#         break
+#
+# miembro = input("Indica un asistente para buscarlo en la lista: ").capitalize()
+# print(f"El asistente {miembro} aparece {asistentes.count(miembro)} veces.")
+# print(f"La primera vez que aparece {miembro} en la lista es en la posición {asistentes.index(miembro)}.")
+# asistentes.remove(miembro)
+# vip = input("Indica un asistente VIP para introducirlo en la lista: ").capitalize()
+# asistentes.insert(0, vip)
+# print(f"Lista de asistentes: {asistentes}")
+
+# #PY0004
+# menu = ["Ensalada", "Sopa", "Pasta"]
+# menu_hoy = menu.copy()
+# menu_hoy.extend(["Pescado", "Postre"])
+# menu_hoy.pop(len(menu_hoy) -1)
+# menu_hoy.remove("Sopa")
+# menu_hoy.pop(0)
+# menu_hoy.reverse()
+# print(f"Menú de hoy: {menu_hoy}")
+# menu.clear()
+# print(f"\nMenú base: {menu}")
+# print(f"\nMenú de hoy: {menu_hoy}")
